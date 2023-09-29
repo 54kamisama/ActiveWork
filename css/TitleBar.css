@@ -10,7 +10,7 @@ body {
 .title_bar {
     position: fixed;
     display: grid;
-    grid-template-columns: 30% auto 40%;
+    grid-template-columns: 30% auto 600px;
     grid-template-rows: 75%;
     align-items: center;
     padding-top: 20px;
@@ -21,6 +21,7 @@ body {
     background: linear-gradient(to bottom, rgb(241, 241, 241), transparent);
     text-align: center;
     z-index: 9;
+    transition: all 0.2s ease-in-out;
     /* 使标题栏位于最上层 */
 }
 
@@ -80,31 +81,36 @@ body {
 
 .nav ul li:nth-child(1):hover~.nav-box {
     left: calc(100% / 4 *0);
-    background-color: rgb(255, 75, 75)!important;
+    background-color: rgb(255, 75, 75) !important;
 }
 
 .nav ul li:nth-child(2):hover~.nav-box {
     left: calc(100% / 4 *1);
-    background-color: rgb(255, 141, 59)!important; 
+    background-color: rgb(255, 141, 59) !important;
 }
 
 .nav ul li:nth-child(3):hover~.nav-box {
     left: calc(100% / 4 *2);
-    background-color: #ffc574!important;
+    background-color: #ffc574 !important;
 }
 
 .nav ul li:nth-child(4):hover~.nav-box {
     left: calc(100% / 4 *3);
-    background-color: #f6dd25!important;
+    background-color: #f6dd25 !important;
 }
 
-#currentPage{
-    color: rgb(255, 75, 75)!important;
+#currentPage {
+    color: rgb(255, 75, 75) !important;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
     .title_bar {
-        grid-template-columns: 0% auto 80%;
+        grid-template-columns: 100%;
+    }
+
+    .nav {
+        grid-column: 1;
+        justify-self: center;
     }
 
     .menu_title {
