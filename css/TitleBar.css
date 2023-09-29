@@ -1,7 +1,7 @@
 body {
     margin: 0;
+    
 }
-
 
 .menu_title {
     color: rgb(49, 55, 104);
@@ -21,7 +21,6 @@ body {
     background: linear-gradient(to bottom, rgb(241, 241, 241), transparent);
     text-align: center;
     z-index: 9;
-    transition: all 0.2s ease-in-out;
     /* 使标题栏位于最上层 */
 }
 

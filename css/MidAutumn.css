@@ -88,7 +88,7 @@ img {
 .inside_nav {
     position: sticky;
     top: 100px;
-    background-color: #e71313;
+    background-color: #3a537f;
     border-radius: 20px;
     padding: 5px;
     padding-left: 0px;
@@ -118,36 +118,39 @@ img {
     cursor: pointer;
 }
 
-.content_div {
+.foreword_div {
     display: flex;
     border-radius: 20px;
     align-items: center;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
-    background-color: #E0262E;
+    background-color: #3a537f;
     color: white;
     overflow: hidden;
 }
 
 .content_body h3 {
     font-size: 30px;
+    color: white;
+    text-shadow: 0 0 3px 3px rgb(255, 255, 162);
+
+
 }
 
-.content_img {
+.foreword_img {
     flex: 1;
 }
 
-.content_img img {
+.foreword_img img {
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 2px rgba(248, 201, 29, 0.379), -5px -5px 5px 2px rgb(241, 255, 180);
-
+    box-shadow: 5px 5px 5px 2px rgb(255, 255, 162)
 }
 
-.content_text {
+.foreword_text {
     flex: 1;
     padding: 1em;
 }
 
-.content_text span {
+.foreword_text span {
     display: inline-block;
     vertical-align: middle;
     font-size: 1vw;
@@ -162,10 +165,34 @@ img {
     padding-left: 15px;
 }
 
+.content_title {
+    background-color: rgb(61, 68, 105);
+    box-shadow: inset -2px -2px 2px 2px rgba(163, 161, 161, 0.589);
+    border-radius: 5px;
+}
 
+.content_title h3{
+    margin-bottom: 0;
+}
+
+.content_text{
+    background-color: #3A537F;
+    border-radius: 0 0 10px 10px;
+    margin: 0 10px 0 10px;
+    padding: 10px;
+    color: white;
+}
+
+.content_text img{
+    float: left;
+    border-radius: 10px;
+    width: 50%;
+}
+
+/* 背景装饰-飘落的孔明灯 */
 .mooncake {
     position: absolute;
-    background-image: url('../src/denglong.png');
+    background-image: url('../src/KongmingLantern.png');
     background-size: cover;
     /* 月饼的图片路径 */
     width: 50px;
@@ -191,6 +218,7 @@ img {
     }
 }
 
+/* 背景装饰-月亮 */
 .background_decorate {
     position: absolute;
     width: 500px;
@@ -212,7 +240,7 @@ img {
 }
 
 
-
+/* 响应式 */
 @media screen and (max-width:1000px) {
     .left_content {
         display: none;
@@ -230,11 +258,11 @@ img {
 }
 
 @media screen and (max-width:765px) {
-    .content_div {
+    .foreword_div {
         display: block;
     }
 
-    .content_text span {
+    .foreword_text span {
         font-size: 15px;
     }
 }
