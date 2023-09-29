@@ -1,0 +1,182 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.shell {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    bottom: 0;
+    text-decoration: none;
+    /* 背景渐变 */
+    background-image: linear-gradient(to bottom right,
+            #eafe91,
+            #faff5f,
+            #fee96f,
+            #fe9b3d,
+            #fd7344,
+            #f63838);
+}
+
+.slideshow_shell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+
+.title_image {
+    width: 80vw;
+    height: 45vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 20px 30px 20px rgba(0, 0, 0, 0.25);
+    margin-top: 100px;
+}
+
+.loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(249, 243, 190);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+}
+
+.loaderImg {
+    width: 20%;
+}
+
+.content {
+    display: flex;
+}
+
+.left_content {
+    flex: 1;
+    max-width: 150px;
+    padding-top: 100px;
+}
+
+.right_content {
+    flex: 1;
+    max-width: 150px;
+}
+
+.content_body {
+    flex: 6;
+    padding: 5%;
+
+}
+
+.inside_nav {
+    position: sticky;
+    top: 100px;
+    background-color: #e71313;
+    border-radius: 20px;
+    padding: 5px;
+    padding-left: 0px;
+    color: #fff;
+}
+
+.inside_nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.inside_nav a:hover {
+    text-decoration: underline;
+}
+
+#backTopButton {
+    display: none;
+    position: fixed;
+    width: 35px;
+    height: auto;
+    bottom: 5%;
+    right: 5%;
+}
+
+#backTopButton:hover {
+    cursor: pointer;
+}
+
+.content_div {
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #E0262E;
+    color: white;
+    overflow: hidden;
+}
+
+.content_body h3 {
+    font-size: 30px;
+}
+
+.content_img {
+    flex: 1;
+}
+
+.content_img img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 2px rgba(248, 201, 29, 0.379), -5px -5px 5px 2px rgb(241, 255, 180);
+
+}
+
+.content_text {
+    flex: 1;
+    padding: 1em;
+}
+
+.content_text span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 1vw;
+    text-indent: 2em;
+}
+
+#currentPage {
+    background-image: url("../src/ChineseKnot.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 35px;
+    padding-left: 15px;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .left_content {
+        display: none;
+    }
+
+    .right_content {
+        display: none;
+    }
+
+    .content_body{
+        margin: 5%;
+    }
+
+
+}
+
+@media screen and (max-width:765px) {
+    .content_div {
+        display: block;
+    }
+
+    .content_text span {
+        font-size: 15px;
+    }
+}

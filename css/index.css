@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(255, 253, 240);
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title_image img {
+    box-shadow: 0 5px 5px 5px rgba(211, 115, 115, 0.616);
+}
+
+.content_shell {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.link_nav {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 5%;
+    padding-top: 0;
+}
+
+.link_nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.link_box {
+    display: flex;
+    margin: 2%;
+    height: 15vw;
+    background-color: rgb(235, 102, 102);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: weight 0.2s ease-in-out;
+    box-shadow: 5px 5px 3px 5px rgba(217, 135, 135, 0.76);
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+    /* 添加阴影效果 */
+    /* 设置旋转的中心点为卡片中心 */
+    transform-origin: center center;
+}
+
+.link_box:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.link_box img{
+    border-radius: 20px;
+    box-shadow: 0 0 2px 5px rgba(247, 193, 139, 0.719);
+}
+
+.link_text {
+    align-items: center;
+    text-align: center;
+    padding-left: 2vw;
+}
+
+.link_text h3 {
+    font-size: 25px;
+    padding: 5px;
+    margin: 0;
+}
+
+.link_text span {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.nav_title {
+    text-align: center;
+    font-size: 40px;
+}
+
+
+
+
+@media screen and (max-width:1000px) {
+    .link_nav {
+        grid-template-columns: 100%;
+    }
+
+    .content_shell {
+        margin: 0px;
+    }
+}
