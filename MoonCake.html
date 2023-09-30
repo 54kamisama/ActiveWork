@@ -27,8 +27,8 @@
     </div>
     <div class="shell" id="shell">
         <div class="header">
-            <h2 class="title">历年阅兵仪式</h2>
-            <h3 class="subtitle">Review troops</h3>
+            <h2 class="title">中秋月饼大赏</h2>
+            <h3 class="subtitle">Mooncake Appreciation</h3>
         </div>
 
         <div id="timeline" class="timeline"></div>
@@ -36,7 +36,7 @@
 
     <div id="backTopButton"><img src="src/BackToTop.png"></div>
 
-    <script src="js/GQTimeLine.js"></script>
+    <script src="js/MoonCake.js"></script>
     <script src="js/external/jQuery.js"></script>
     <script>
 
@@ -64,7 +64,7 @@
                 $(window).scroll(function () {
                     var max, min;
                     // 获取页面滚动的距离
-                    var pos = $(this).scrollTop() + $(this).height() / 2 / 2 + 100;
+                    var pos = $(this).scrollTop() + $(this).height() / 2 / 2 +100;
                     selectors.item.each(function (i) {
                         // 获取当前时间轴项目的最小和最大高度
                         min = $(this).offset().top;
