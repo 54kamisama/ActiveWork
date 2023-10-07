@@ -1,5 +1,3 @@
-const nav_box = document.getElementById('nav-box');
-
 document.addEventListener("DOMContentLoaded", function () {
     // 延迟3秒后隐藏加载动画
     setTimeout(function () {
@@ -43,6 +41,7 @@ window.addEventListener("scroll", function () {
     }
 });
 
+//一键返回顶部事件
 backTopButton.addEventListener("click", function () {
     window.scrollTo({
         top: 0,

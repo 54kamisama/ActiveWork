@@ -11,11 +11,12 @@
 </head>
 
 <body>
-
+    <!-- 加载页面 -->
     <div class="loader-wrapper">
         <img class="loaderImg" src="src/MA_load.png"></img>
     </div>
 
+    <!-- 标题栏 -->
     <div class="title_bar">
         <h1 class="menu_title">迎国庆·庆中秋</h1>
         <div class="nav">
@@ -29,19 +30,24 @@
         </div>
     </div>
 
+    <!-- 外壳 -->
     <div class="shell">
+        <!-- 背景-月亮 -->
         <img class="background_decorate" src="src/moon.png">
+        <!-- 飘落的月饼? 孔明灯! -->
         <div class="mooncake" style="left: 5%; animation-duration: 5s;"></div>
         <div class="mooncake" style="left: 30%; animation-duration: 3.5s;"></div>
         <div class="mooncake" style="left: 50%; animation-duration: 4s;"></div>
         <div class="mooncake" style="left: 60%; animation-duration: 3s;"></div>
+        <!-- 标题图片 -->
         <div class="slideshow_shell">
             <img class="title_image" src="src/MA_title_img.png">
         </div>
-
+        <!-- 内容 -->
         <div class="content">
-
+            <!-- 左侧内容 -->
             <div class="left_content">
+                <!-- 内部导航栏 -->
                 <nav class="inside_nav">
                     <ul>
                         <li><a href="#月下团圆">月下团圆</a></li>
@@ -50,11 +56,16 @@
                     </ul>
                 </nav>
             </div>
+            <!-- 内容体 -->
             <div class="content_body">
 
+                <!-- 内容标题 -->
                 <h3 id="月下团圆">月下团圆：探寻中秋的文化之美</h3>
+                <!-- 框架 -->
                 <div class="content_div">
+                    <!-- 图片 -->
                     <span class="content_img"><img src="src/MA_img2.jpg"></span>
+                    <!-- 文本 -->
                     <div class="content_text">
                         <span>
                             中秋，皎洁的月光下，亲情在家人的聚首中显得尤为温暖。这个古老的节日承载着丰富的文化内涵，仿佛是一本悠久的文化史书。在这个网页中，我们将漫游于月光之下，一同揭开中秋的神秘面纱，发现那些被岁月封存的传统习俗、美味佳肴以及深沉的文化底蕴。让我们探寻，体验，共同领略这个月夜中散发的独特魅力。
@@ -113,11 +124,13 @@
 
 
             </div>
+            <!-- 右侧内容 - 空 -->
             <div class="right_content"></div>
         </div>
+        <!-- 一键放回顶部控件 -->
         <div id="backTopButton"><img src="src/BackToTop.png"></div>
 
-
+        <!-- 逻辑 -->
         <script src="js/MidAutumn.js"></script>
 
 </body>

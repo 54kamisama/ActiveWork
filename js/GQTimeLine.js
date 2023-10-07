@@ -17,6 +17,7 @@ window.addEventListener("scroll", function () {
     }
 });
 
+// 一键返回
 backTopButton.addEventListener("click", function () {
     window.scrollTo({
         top: 0,
@@ -24,6 +25,7 @@ backTopButton.addEventListener("click", function () {
     });
 });
 
+//格式化数据
 function addNewItem(dataText,time,text,imgPath) {
     const item = document.createElement('div');
     const content = document.createElement('div');
@@ -66,6 +68,7 @@ items = [
     { dataText: "抗战老兵、英烈子女、抗战支前模范接受检阅", time: "2015", text: "这是新中国成立以来首次以纪念抗战胜利为主题举行的阅兵；首次邀请外国军队代表参加分列式；首次组织抗战老兵包括国民党老兵参阅；首次编组英模部队方队受阅；首次按作战体系编排装备方队；首次由将军担任领队。", imgPath: "src/img/2015.jpg" },
 ];
 
+//向时间线添加数据
 items.forEach(element => {
     addNewItem(element.dataText, element.time, element.text, element.imgPath);
 });
